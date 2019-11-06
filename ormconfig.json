@@ -1,0 +1,17 @@
+[{
+    "name": "geolocation",
+    "type": "sqlite",
+    "database": "./db/geolocation.DB",
+    "synchronize": true,
+    "logging": false,
+    "entities": ["src/database/entities/**/*.ts"],
+    "migrations": ["src/database/entities/migration/**/*.ts"],
+    "subscribers": ["src/database/entities/subscriber/**/*.ts"],
+    "cli": {
+      "entitiesDir": "src/database/entities/entity",
+      "migrationsDir": "src/database/entities/migration",
+      "subscribersDir": "src/database/entities/subscriber"
+    }
+  }
+
+]
